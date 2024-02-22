@@ -29,7 +29,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <DynamicComponent componentName="NavBar" {...nav} />
+      <DynamicComponent componentName="NavBar" type={nav.navbarType} {...nav} />
     </>
   )
 }

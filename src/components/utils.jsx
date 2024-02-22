@@ -1,7 +1,7 @@
 import * as comps from '../dynamicComps'
 
-export const DynamicComponent = ({ componentName, ...props }) => {
-  const comp = componentName+props.navbarType
+export const DynamicComponent = ({ componentName, type, ...props }) => {
+  const comp = componentName+type
 
   const UtilComp = comps[comp];
 
