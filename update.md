@@ -14,3 +14,9 @@ Desc:
 Date: 02/22/24
 Desc:
 * fixed some default names in dynamic component
+
+**Feat-2**
+Date: 02/22/24
+Desc:
+* Created 3 Footers in dynamis comps
+* Added 1 parent footer comp
