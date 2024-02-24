@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-import { STRAPI_KEY } from '../config'
+import { STRAPI_KEY, STRAPI_URL } from '../config'
 
 // Axios instance with default configuration
 const instance = axios.create({
-  baseURL: 'http://localhost:1337/api', // Replace with your API's base URL
+  baseURL: STRAPI_URL, // Replace with your API's base URL
   timeout: 5000, // Adjust the timeout as needed
   headers: {
     Authorization: `Bearer ${STRAPI_KEY}`,

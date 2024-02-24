@@ -18,5 +18,11 @@ Desc:
 **Feat-2**
 Date: 02/22/24
 Desc:
-* Created 3 Footers in dynamis comps
+* Created 3 Footers in dynamic comps
 * Added 1 parent footer comp
+
+**Fix-1**
+Date: 02/24/24
+Desc:
+* Fixed navbar naming issue
+* Fixed strapi url
