@@ -21,8 +21,14 @@ Desc:
 * Created 3 Footers in dynamic comps
 * Added 1 parent footer comp
 
-**Fix-1**
+**Fix-2**
 Date: 02/24/24
 Desc:
 * Fixed navbar naming issue
 * Fixed strapi url
+
+**Feat-3**
+Date: 02/24/24
+Desc:
+* Created 2 sidebar positions for Type1 in dynamic comp
+* Added 1 parent sidebar comp
