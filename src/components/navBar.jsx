@@ -23,10 +23,6 @@ export const NavBar = () => {
     fetchNav()
   }, [])
 
-  if (Object.keys(nav).length === 0) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <>
       <DynamicComponent componentName="NavBar" type={nav.navbarType} {...nav} />

@@ -1,3 +1,9 @@
+*Feat-4**
+Date: 02/24/24
+Desc:
+* Created 1 shopping card type1 need to make 2 more
+* fixed apis for side bar
+
 **Feat-3**
 Date: 02/24/24
 Desc:

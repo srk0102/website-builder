@@ -1,3 +1,5 @@
 export * from './navBar'
 export * from './searchBar'
 export * from './footer'
+export * from './shoppingCard'
+export * from './itemsCounter'

@@ -14,7 +14,7 @@ export const SideBar = () => {
   useEffect(() => {
     const fetchSide = async () => {
       try {
-        const fetchedSide = await getSideBar(10);
+        const fetchedSide = await getSideBar(1);
         setSide(fetchedSide.attributes);
       } catch (error) {
         console.error("Error fetching side:", error);
@@ -22,10 +22,6 @@ export const SideBar = () => {
     }
     fetchSide()
   }, [])
-
-  if (Object.keys(side).length === 0) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <>
