@@ -1,4 +1,10 @@
-*Feat-4**
+**Fix-3**
+Date: 02/26/24
+Desc:
+* Fixed errors in footer and Navbar dynamic comps
+* Fixed some default css problems in index.css and app.css
+
+**Feat-4**
 Date: 02/24/24
 Desc:
 * Created 1 shopping card type1 need to make 2 more

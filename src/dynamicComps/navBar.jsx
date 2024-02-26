@@ -4,8 +4,9 @@ import { SearchBar } from "../components";
 export const NavBarType1 = (props) => {
   const { searchBar, companyName, links, logo } = props;
   return (
+    <>
     <div>
-      <div className="fixed top-0 left-0 right-0">
+      <div className="fixed top-0 left-0 right-0 mb-5">
         <nav className="bg-white border-gray-200 dark:bg-amber-400">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
@@ -79,13 +80,16 @@ export const NavBarType1 = (props) => {
         </nav>
       </div>
     </div>
+      <div className="spacer mt-16">
+      </div>
+    </>
   );
 };
 export const NavBarType2 = (props) => {
   const { searchBar, companyName, links, logo } = props;
 
   return (
-    <div>
+    <>
       <div className="fixed top-0 left-0 right-0">
         <nav className="bg-white flex content-center border-gray-200 dark:bg-amber-400">
           <div className="flex justify-items-center mx-auto max-w-screen-xl p-4">
@@ -151,6 +155,8 @@ export const NavBarType2 = (props) => {
           </div>
         </nav>
       </div>
-    </div>
+      <div className="spacer mt-28">
+      </div>
+    </>
   );
 };

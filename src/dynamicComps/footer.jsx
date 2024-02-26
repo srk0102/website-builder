@@ -1,10 +1,9 @@
-import React from "react";
 
 export const FooterType1 = (props) => {
   const { companyName, links, logo } = props;
   return (
     <>
-      <div className="fixed bottom-0 left-0 right-0">
+      <div className="bottom-0 left-0 right-0 w-100">
         <footer className="bg-white rounded-lg shadow">
           <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div className="sm:flex sm:items-center sm:justify-between">

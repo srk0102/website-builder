@@ -16,7 +16,6 @@ export const Footer = () => {
       try {
         const fetchedFoot = await getFooter(1);
         setFoot(fetchedFoot.attributes);
-        console.log(fetchedFoot)
       } catch (error) {
         console.error("Error fetching foot:", error);
       }

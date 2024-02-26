@@ -14,7 +14,7 @@ export const NavBar = () => {
   useEffect(() => {
     const fetchNav = async () => {
       try {
-        const fetchedNav = await getNav(3);
+        const fetchedNav = await getNav(1);
         setNav(fetchedNav.attributes);
       } catch (error) {
         console.error("Error fetching nav:", error);
