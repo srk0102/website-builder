@@ -6,7 +6,7 @@ export const NavBarType1 = (props) => {
   return (
     <>
     <div>
-      <div className="fixed top-0 left-0 right-0 mb-5">
+      <div className="fixed top-0 left-0 right-0 z-10">
         <nav className="bg-white border-gray-200 dark:bg-amber-400">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
@@ -90,7 +90,8 @@ export const NavBarType2 = (props) => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0">
+    <div>
+      <div className="fixed top-0 left-0 right-0 z-10">
         <nav className="bg-white flex content-center border-gray-200 dark:bg-amber-400">
           <div className="flex justify-items-center mx-auto max-w-screen-xl p-4">
             <a
@@ -157,6 +158,7 @@ export const NavBarType2 = (props) => {
       </div>
       <div className="spacer mt-28">
       </div>
+    </div>
     </>
   );
 };

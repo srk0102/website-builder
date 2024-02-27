@@ -7,7 +7,7 @@ export const SideBarType1 = (props) => {
   return (
     <div className="SideBar ">
       <button
-        className={`fixed md:hidden top-6 ${position}-4 p-4 z-10`}
+        className={`fixed md:hidden top-6 ${position}-0 ml-3 p-4 z-10`}
         onClick={() => setShowButton(!showButton)}
       >
         <span className="block w-6 h-1 bg-yellow-300 mb-1"></span>
@@ -86,7 +86,7 @@ export const SideBarType2 = (props) => {
   return (
     <div className="SideBar ">
       <button
-        className={`fixed md:hidden top-6 ${position}-4 p-4 z-10`}
+        className={`fixed md:hidden top-6 ${position}-0 ml-3 p-4 z-10`}
         onClick={() => setShowButton(!showButton)}
       >
         <span className="block w-6 h-1 bg-yellow-300 mb-1"></span>

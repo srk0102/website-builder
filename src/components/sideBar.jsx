@@ -14,7 +14,7 @@ export const SideBar = () => {
   useEffect(() => {
     const fetchSide = async () => {
       try {
-        const fetchedSide = await getSideBar(1);
+        const fetchedSide = await getSideBar(8);
         setSide(fetchedSide.attributes);
       } catch (error) {
         console.error("Error fetching side:", error);

@@ -1,3 +1,9 @@
+**Fix-4**
+Date: 02/27/24
+Desc:
+* Fixed Navbar's z-index 
+* Fixed sidebar's z-index
+
 **Fix-3**
 Date: 02/26/24
 Desc:
