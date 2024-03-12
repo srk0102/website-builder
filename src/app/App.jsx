@@ -1,16 +1,13 @@
 import './App.css'
 
-import { NavBar, Footer, ShoppingCard, SideBar} from '../components'
+import { Editor } from '../editor'
 
 function App() {
 
 
   return (
     <>
-      <NavBar />
-      <SideBar/>
-      <ShoppingCard />
-      <Footer/>
+      <Editor/>
     </>
   )
 }
