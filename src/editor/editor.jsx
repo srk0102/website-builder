@@ -1,7 +1,7 @@
 import { Puck } from "@measured/puck";
 import "@measured/puck/puck.css";
 
-import {config, initialData} from './puckConfig'
+import { config, initialData } from './puckConfig'
 
 // Render Puck editor
 export function Editor() {
@@ -11,5 +11,10 @@ export function Editor() {
     console.log(data)
   };
 
-  return <Puck config={config} data={initialData} onPublish={save} />;
+  return (
+    <>
+      <Puck config={config} data={initialData} onPublish={save}>
+      </Puck>
+    </>
+  )
 }

@@ -1,3 +1,9 @@
+**Update-1**
+Date: 03/30/24
+Desc:
+* Updated navbar
+* Removed Links component
+
 **Fix-4**
 Date: 02/27/24
 Desc:
