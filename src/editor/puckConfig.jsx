@@ -1,10 +1,9 @@
-import { NavBar, Links } from '../components'
+import { NavBar } from '../components'
 
 // Create Puck component config
 export const config = {
   components: {
-    NavBar,
-    Links
+    NavBar
   },
 };
 
