@@ -1,17 +1,13 @@
 import { sendRequest } from './axios'
 
-/**
- *
- * @param {Number} id optional dependency, pass only if you want to fetch id details.
- * @returns {Object}
- */
-export const getNav = async (id) => {
+
+export const postConfig = async (body) => {
   try {
     const config = {
-      method: 'get',
-      url: `/nav-bars${id ? '/'+id : ''}`,
+      method: 'put',
+      url: `/puck-configs/2`,
+      data: { data: body }
     }
-
     const response = await sendRequest(config)
     return response.data
   }
@@ -21,60 +17,12 @@ export const getNav = async (id) => {
   }
 }
 
-/**
- *
- * @param {Number} id optional dependency, pass only if you want to fetch id details.
- * @returns {Object}
- */
-export const getFooter = async (id) => {
+export const getConfig = async (id) => {
   try {
     const config = {
       method: 'get',
-      url: `/footers${id ? '/' + id : ''}`,
+      url: `/puck-configs/${id}`,
     }
-
-    const response = await sendRequest(config)
-    return response.data
-  }
-  catch (error) {
-    console.log(error.message)
-    console.error(error.message, error.error)
-  }
-}
-
-/**
- *
- * @param {Number} id optional dependency, pass only if you want to fetch id details.
- * @returns {Object}
- */
-export const getSideBar = async (id) => {
-  try {
-    const config = {
-      method: 'get',
-      url: `/side-bars${id ? '/' + id : ''}`,
-    }
-
-    const response = await sendRequest(config)
-    return response.data
-  }
-  catch (error) {
-    console.log(error.message)
-    console.error(error.message, error.error)
-  }
-}
-
-/**
- *
- * @param {Number} id optional dependency, pass only if you want to fetch id details.
- * @returns {Object}
- */
-export const getShoppingCard = async (id) => {
-  try {
-    const config = {
-      method: 'get',
-      url: `/shopping-cards${id ? '/' + id : ''}`,
-    }
-
     const response = await sendRequest(config)
     return response.data
   }

@@ -1,13 +1,9 @@
 import { DropZone } from "@measured/puck";
 
-import { fontSize, textAlign, color, backgroundColor, padding, margin, height, width } from './utils'
+import { backgroundColor, padding, margin, height, width } from './utils'
 
 export const NavBar = {
   fields: {
-    title: {
-      type: "text",
-      label: "Navbar Title",
-    },
     navType: {
       type: "radio",
       label: "Nav Type",
@@ -17,15 +13,6 @@ export const NavBar = {
         { label: "Right", value: "row-reverse" },
       ],
     },
-    links: {
-      type: "array",
-      arrayFields: {
-        title: { type: "text" },
-      },
-    },
-    textAlign,
-    fontSize,
-    color,
     backgroundColor,
     padding,
     margin,
@@ -33,17 +20,9 @@ export const NavBar = {
     width,
   },
 
-  render: ({ title, fontSize, textAlign, color, backgroundColor, padding, margin, navType, height, width, links }) => (
-    <nav style={{
-      display: 'flex', flexDirection: navType, justifyContent: "space-around", alignItems:"center", height, width }}>
-      <h1 style={{ fontSize, textAlign, color, backgroundColor, padding, margin }}>{title}</h1>
-      <div className="links">
-        <ul>
-          {links?.map((item, i) => (
-            <li key={i}>{item.title}</li>
-          ))}
-        </ul>
-      </div>
+  render: ({ navType, height, width, margin, padding, backgroundColor }) => (
+    <nav style={{ height, width, margin, padding, backgroundColor }}>
+      <DropZone zone="nav-content" style={{ display: 'flex', flexDirection: navType, justifyContent: "space-around", alignItems: "center", }} />
     </nav>
   ),
 };

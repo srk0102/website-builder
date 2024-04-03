@@ -1,2 +1,5 @@
 export * from './navBar'
+export * from './text'
+export * from './shopBody'
+export * from './footer'
 export * from './utils'
