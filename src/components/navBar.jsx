@@ -2,6 +2,8 @@ import { DropZone } from "@measured/puck";
 
 import { backgroundColor, padding, margin, height, width } from './utils'
 
+import mainLogo from '../assets/Logo.png';
+
 export const NavBar = {
   fields: {
     navType: {
@@ -21,8 +23,9 @@ export const NavBar = {
   },
 
   render: ({ navType, height, width, margin, padding, backgroundColor }) => (
-    <nav style={{ height, width, margin, padding, backgroundColor }}>
-      <DropZone zone="nav-content" style={{ display: 'flex', flexDirection: navType, justifyContent: "space-around", alignItems: "center", }} />
+    <nav className="px-8" style={{ height, width, margin, padding, backgroundColor, display: 'flex', flexDirection: navType, justifyContent: "space-between", alignItems: "center", }}>
+      <img src={mainLogo} className="w-60 p-4"/>
+      <DropZone zone="nav-content" />
     </nav>
   ),
 };

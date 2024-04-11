@@ -1,62 +1,87 @@
-export const indianMenu = [
+export const templeServices = [
   {
-    name: "Biryani",
-    description: "Aromatic basmati rice cooked with tender chicken or lamb, infused with exotic spices",
-    price: "20.00",
-    image: "docs/biryani.png"
-  },
-  {
-    name: "Butter Chicken",
-    description: "Tender chicken cooked in a rich and creamy tomato-based sauce, with a hint of butter and spices",
-    price: "18.00",
-    image: "docs/butter_chicken.png"
-  },
-  {
-    name: "Masala Dosa",
-    description: "Crispy rice and lentil crepe filled with a savory potato masala, served with coconut chutney and sambar",
-    price: "12.00",
-    image: "docs/masala_dosa.png"
-  },
-  {
-    name: "Paneer Tikka",
-    description: "Cubes of paneer (Indian cottage cheese) marinated in yogurt and spices, grilled to perfection",
-    price: "15.00",
-    image: "docs/paneer_tikka.png"
-  },
-  {
-    name: "Chole Bhature",
-    description: "Spiced chickpea curry served with fluffy fried bread, a popular street food from North India",
+    id: 1,
+    category: "Pooja",
+    name: "Archana",
+    description: "Offering of flowers to the deity accompanied by chanting of the divine names",
     price: "10.00",
-    image: "docs/chole_bhature.png"
+    image: "docs/archana.png",
+    modifiers: ["kunkum", "laddu", "turmeric"]
   },
   {
-    name: "Palak Paneer",
-    description: "Creamy spinach curry with chunks of paneer, flavored with garlic, ginger, and spices",
-    price: "16.00",
-    image: "docs/palak_paneer.png"
+    id: 2,
+    category: "Pooja",
+    name: "Abhishekam",
+    description: "A ceremonial bathing of the deity with water, milk, yogurt, ghee, honey, and other auspicious substances",
+    price: "25.00",
+    image: "docs/abhishekam.png"
   },
   {
-    name: "Rogan Josh",
-    description: "Tender pieces of lamb cooked in a flavorful gravy with aromatic spices like cardamom, cloves, and cinnamon",
-    price: "22.00",
-    image: "docs/rogan_josh.png"
+    id: 3,
+    category: "Prasad",
+    name: "Laddu",
+    description: "Round sweet balls made of flour, sugar, ghee, and other ingredients, offered as a sacred food offering",
+    price: "5.00",
+    image: "docs/laddu.png"
   },
   {
-    name: "Pani Puri",
-    description: "Crisp hollow puris filled with spicy potato mixture and tangy tamarind water, a popular street snack",
+    id: 4,
+    category: "Prasad",
+    name: "Pongal",
+    description: "A traditional South Indian dish made with rice, lentils, and spices, sweetened with jaggery",
     price: "8.00",
-    image: "docs/pani_puri.png"
+    image: "docs/pongal.png"
   },
   {
-    name: "Aloo Gobi",
-    description: "Stir-fried cauliflower and potatoes cooked with onions, tomatoes, and Indian spices",
-    price: "14.00",
-    image: "docs/aloo_gobi.png"
+    id: 5,
+    category: "Donation",
+    name: "Anna Dana",
+    description: "Offering of food to devotees and visitors as a form of charity and service",
+    price: "Variable",
+    image: "docs/anna_dana.png"
   },
   {
-    name: "Samosa",
-    description: "Crispy pastry filled with spiced potatoes, peas, and sometimes minced meat, served with chutney",
-    price: "6.00",
-    image: "docs/samosa.png"
+    id: 6,
+    category: "Donation",
+    name: "Vastram",
+    description: "Donation of clothes to the temple for use by the deity or distribution to the needy",
+    price: "Variable",
+    image: "docs/vastram.png"
+  },
+  {
+    id: 7,
+    category: "Special Events",
+    name: "Rath Yatra",
+    description: "Annual procession of the temple deity in a chariot, accompanied by chanting and festivities",
+    price: "Variable",
+    image: "docs/rath_yatra.png"
+  },
+  {
+    id: 8,
+    category: "Special Events",
+    name: "Kalyanotsavam",
+    description: "Ceremonial wedding of the temple deity, symbolizing the union of the divine with the devotee",
+    price: "50.00",
+    image: "docs/kalyanotsavam.png"
+  },
+  {
+    id: 9,
+    category: "Offerings",
+    name: "Pushpam",
+    description: "Offering of fresh flowers to the deity as a gesture of devotion and auspiciousness",
+    price: "5.00",
+    image: "docs/pushpam.png"
+  },
+  {
+    id: 10,
+    category: "Offerings",
+    name: "Deepam",
+    description: "Offering of lighted lamps or candles to the deity, symbolizing the dispelling of darkness and ignorance",
+    price: "3.00",
+    image: "docs/deepam.png"
   }
 ]
+
+export const test = async() => {
+  return 1
+}

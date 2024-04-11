@@ -1,29 +1,33 @@
 import { useEffect, useState } from "react";
+import { useParams } from 'react-router-dom'
 import { Puck } from "@measured/puck";
 import headingAnalyzer from "@measured/puck-plugin-heading-analyzer";
 import "@measured/puck/puck.css";
 import "@measured/puck-plugin-heading-analyzer/dist/index.css";
 
 import { config, initialData } from './puckConfig'
-import { postConfig, getConfig } from '../api'
+import { postConfig, getConfig, putConfig } from '../api'
 
 // Render Puck editor
 export function Editor(props) {
 
   const { headerPath = '/' } = props
+  const { storeId } = useParams();
 
-  const [data, setData] = useState(null);
+
+  const [apiData, setData] = useState(null);
+  const [strapiId, setStrapiId] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await getConfig(2);
-        setData(response.attributes.config);
+        const response = await getConfig(storeId, headerPath);
+        setStrapiId(response[0].id)
+        setData(response[0].attributes.config);
       } catch (error) {
-        setError(error);
+        console.log(error);
       } finally {
         setLoading(false);
       }
@@ -36,9 +40,10 @@ export function Editor(props) {
   const save = async (config) => {
     const data = {
       config: config,
-      configId: 'xp-324'
+      configId: "2345637",
+      path: headerPath
     }
-    const result = await postConfig(data)
+    const result = apiData ? await putConfig(data, strapiId) : await postConfig(data)
     console.log(result)
   };
 
@@ -46,15 +51,11 @@ export function Editor(props) {
     return <p>Loading...</p>;
   }
 
-  if (error) {
-    return <p>Error: {error.message}</p>;
-  }
-
   return (
     <>
       <Puck
         config={config}
-        data={data.content ? data : initialData}
+        data={strapiId ? apiData : initialData}
         plugins={[
           headingAnalyzer
         ]}

@@ -1,4 +1,4 @@
-import { NavBar, Heading, ShopBody, Footer } from '../components'
+import { NavBar, Heading, ShopBody, Footer, Cart } from '../components'
 
 // Create Puck component config
 export const config = {
@@ -6,14 +6,15 @@ export const config = {
     NavBar,
     Heading,
     ShopBody,
-    Footer
+    Footer,
+    Cart
   },
   categories: {
     Nav: {
       components: ["NavBar"],
     },
     Body: {
-      components: ["ShopBody"]
+      components: ["ShopBody", "Cart"]
     },
     Typography: {
       components: ["Heading"],
