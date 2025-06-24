@@ -122,7 +122,7 @@ export const ShopBody = {
       ],
     },
     HeadColor: tailwindTextColors,
-    DescriptionColor: tailwindTextColors,
+    bodyColor: tailwindTextColors,
     PriceColor: color,
     CardBackgroundColor: tailwindBgColors,
     CategoryPadding: padding,
